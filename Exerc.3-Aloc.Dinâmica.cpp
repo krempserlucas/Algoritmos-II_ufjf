@@ -29,6 +29,7 @@ int main(){
     cout<< par[i] << " ";
    } 
    cout<<endl;
-
+   delete [] par;
+   delete [] vet;
     return 0;
 }

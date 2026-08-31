@@ -16,6 +16,9 @@ int main(){
     for(int i=0; i<n; i++) cin>>*(y+i);
     float pe= prodEscalar(n, x, y);
     cout<< pe << endl;
+    
+    delete [] x;
+    delete [] y; 
 
     return 0;
 }
