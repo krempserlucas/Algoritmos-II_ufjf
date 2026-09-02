@@ -1,3 +1,13 @@
+/*
+Implemente uma função que calcule o produto escalar
+entre dois vetores do tipo de dados float. No programa
+principal você deve ler o tamanho n dos vetores, os quais
+devem ser alocados dinâmicamente usando new. Depois,
+voce deve ler os dados dos vetores e chamar a função ao para
+calcular o produto escalar. Por fim, use o operador
+delete para desalocar toda memória alocada de forma  
+dinâmica.
+*/
 #include <bits/stdc++.h>
 using namespace std;
 float prodEscalar(int n, float x[], float y[]){
