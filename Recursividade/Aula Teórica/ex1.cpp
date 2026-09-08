@@ -14,8 +14,7 @@ int main(){
 
     int n;
     cin>>n;
-    int resp = sigma(n);
-    cout<< resp << endl;
+    cout<< sigma(n) << endl;
 
     return 0;
 }
