@@ -18,9 +18,7 @@ int sequencia(int n, int *npar, int *nimpar){
     else{
         (*nimpar)++;
         if(n==1) return (*npar + *nimpar);
-        else return sequencia(3*n +1 , npar, nimpar);
-        
-        
+        else return sequencia(3*n +1 , npar, nimpar);  
     }
 }
 int main(){
