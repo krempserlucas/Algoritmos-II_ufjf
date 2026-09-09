@@ -10,21 +10,16 @@ do que val, a função não deve modificar o vetor.
 #include <bits/stdc++.h>
 using namespace std;
 int sequencia(int n, int *npar, int *nimpar){
+    cout<<n<<endl;
     if(n%2==0){
         (*npar)++;
-        cout<<n<<endl;
         return sequencia(n/2 , npar, nimpar);
     }
     else{
         (*nimpar)++;
-        if(n==1){
-            cout<<n<<endl;
-            return (*npar + *nimpar);
-        }
-        else{
-            cout<<n<<endl;
-            return sequencia(3*n +1 , npar, nimpar);
-        }
+        if(n==1) return (*npar + *nimpar);
+        else return sequencia(3*n +1 , npar, nimpar);
+        
         
     }
 }
