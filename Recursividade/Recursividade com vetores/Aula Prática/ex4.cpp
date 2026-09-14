@@ -15,10 +15,22 @@ função iguais, imprimindo seu retorno.
 using namespace std;
 
 int iguais(int vet1[], int vet2[], int n){
-
+    if(n-1 == 0 && vet1[0] == vet2[0]) 
+        return -1;
+    if( vet1[0] != vet2[0])
+     return n-1;
+    else
+    return  iguais(vet1 +1, vet2 +1 , n-1);
 }
 
 int main(){
-  
+  int n;
+  cin>>n;
+  int *vet1 = new int[n];
+  for(int i=0; i<n; i++) cin>>vet1[i];
+  int *vet2 = new int[n];
+  for(int i=0; i<n; i++) cin>>vet2[i];
+  cout<< iguais(vet1, vet2, n) << endl;
+
     return 0;
 }
