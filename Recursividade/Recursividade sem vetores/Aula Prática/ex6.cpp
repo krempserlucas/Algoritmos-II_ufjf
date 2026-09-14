@@ -1,6 +1,6 @@
 /*
 Desenvolver uma função recursiva para calcular e retornar
-o valor do n-ésimo número harmônico H(n):
+o valor do n-ésimo número harmônico H(n)
 */
 #include <bits/stdc++.h>
 using namespace std;

@@ -16,8 +16,13 @@ val, e depois imprima os elementos do vetor.
 using namespace std;
 
 void substituiMenor(int val, int vet[], int n){
-    if( vet[n-1] < val ) vet[n-1] = val;
-    if(n-1 != 0) substituiMenor(10, vet, n-1);
+    bool flag=0;
+    if( vet[0] < val ){
+         vet[0] = val;
+         flag=1;
+    }
+    if(n-1 != 0 && flag==0)
+         substituiMenor(10, vet+1, n-1);
 }
 
 int main(){
