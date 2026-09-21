@@ -1,5 +1,8 @@
 /*
-
+Desenvolver uma função recursiva para, dados um vetor
+vet e um número inteiro  n, preencher o vetor com os
+valores gerados pelos termos da definição de  f(n). A
+função deve retornar a soma de f(n).
 */
 #include <bits/stdc++.h>
 using namespace std;
